@@ -4,8 +4,12 @@ def pachet_info(packet):
         arp=packet[ARP]
         print(f"sors ip :{arp.psrc} mac :{arp.hwsrc} :: dest ip :{arp.pdst} MAC :{arp.hwdst}")
     # print(str(packet.summary))
-    elif IP in packet:
+    if IP in packet:
         print(f"ip sorc :{packet[IP].src} :: ip dest :{packet[IP].dst}")
+    if TCP in packet:
+        tcp=packet[TCP]
+        print(f"spotr :{tcp.sport} :: dport {tcp.dport}")
+
         
 
 try:
