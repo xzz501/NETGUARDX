@@ -4,6 +4,9 @@ def pachet_info(packet):
         arp=packet[ARP]
         print(f"sors ip :{arp.psrc} mac :{arp.hwsrc} :: dest ip :{arp.pdst} MAC :{arp.hwdst}")
     # print(str(packet.summary))
+    elif IP in packet:
+        print(f"ip sorc :{packet[IP].src} :: ip dest :{packet[IP].dst}")
+        
 
 try:
     sniff(prn=pachet_info,store=0,count=0,timeout=60)
