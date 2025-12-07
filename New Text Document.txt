@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PyCharm
+Type=Application
+Exec=/home/ezz/pycharm-community-2024.3.4/bin/pycharm.sh
+Icon=/home/ezz/pycharm-community-2024.3.4/bin/pycharm.png
+Comment=Python IDE
+Terminal=false
+Categories=Development;IDE;
+StartupWMClass=jetbrains-pycharm
